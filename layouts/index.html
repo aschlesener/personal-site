@@ -6,12 +6,14 @@
 
         <div class="avatar">
             <h1>{{ .Title }}</h1>
+            <h4>Software Engineer</h4>
         </div>
         
         
         <div style = "margin-top: 50px">
             <h2>{{ .Site.Params.description }}</h2>
         </div>
+        {{ partial "intro" . }}
     </div>
 
 </main>
