@@ -1,0 +1,5 @@
+baseURL: http://amyschlesener.com/cryptic-coding
+disablePathToLower: true
+languageCode: en-us
+title: Cryptic Coding
+theme: min_night
