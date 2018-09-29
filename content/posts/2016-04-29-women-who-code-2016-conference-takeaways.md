@@ -4,7 +4,7 @@ categories:
 - Career
 - Conferences
 date: "2016-04-29T00:06:32Z"
-title: Women Who Code 2016 Conference &#8211; Takeaways
+title: Women Who Code 2016 Conference - Takeaways
 url: /posts/2016/04/women-who-code-2016-conference-takeaways/
 ---
 

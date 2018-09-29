@@ -1,0 +1,19 @@
+{{ partial "header" . }}
+
+<main class = "content-box">
+
+    <div class="intro">
+
+        <div class="avatar">
+            <h1>{{ .Title }}</h1>
+        </div>
+        
+        
+        <div style = "margin-top: 50px">
+            <h2>{{ .Site.Params.description }}</h2>
+        </div>
+    </div>
+
+</main>
+
+{{ partial "footer" . }}
