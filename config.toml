@@ -8,7 +8,7 @@ theme = "min_night"
 
 [params]
   font = "Georgia"
-  accent = "#4D4D4D"
+  accent = "#00686d"
   backgroundColor = "#efeded"
   description = "Hello!"
   logo = "favicon-3.ico"
