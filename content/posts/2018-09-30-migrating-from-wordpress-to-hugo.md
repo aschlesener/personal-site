@@ -96,6 +96,8 @@ After changing my domain's nameservers in Namecheap to point to the custom hostn
 
 Note that my domain email account provided through Namecheap did break somewhere during this process of switching the DNS zone to Netlify - i.e. incoming emails don't reach the account, despite adding the MX records from Namecheap to Netlify. For me it's not a pressing issue to solve, since most emails to that account are spam or recruiters, but it's something to keep in mind if you go down the same route.
 
+**Update**: Shortly after this blog post was published, I solved the email account hosting issue by using [Migadu](https://www.migadu.com). They offer free email hosting with MFA and spam/virus protection, plus easy instructions for custom DNS setup. Adding the various DNS records (MX, SPF, DKIM, and DMARC) to Netlify was super easy, and after waiting several hours or so for the changes to propagate, my email was back up.
+
 ## Next Steps
 I accomplished several things by switching from Wordpress to Hugo:
 
