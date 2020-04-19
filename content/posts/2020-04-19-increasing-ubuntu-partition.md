@@ -15,6 +15,7 @@ url: /posts/2020/04/increasing-ubuntu-partition/
 I've been dual-booting Windows and Linux for nearly a decade now. I couldn't afford a fancy Macbook for Unix-based development as is ubiquitous these days, so getting a cheap Windows machine and dual-booting Linux on it was my best option. (It is a universal truth that VMs are god-awful for developing in.)
 
 These days, there are more options than ever for cross-platform development:
+
 - Microsoft introduced [WSL](https://docs.microsoft.com/en-us/windows/wsl/about), a subsystem for Linux a couple years ago. It looks pretty freaking cool, although I haven't used it much beyond some cursory Bash scripts.
 - Thumbdrive mounts. These are easy to lose, so not a great option for a permanent dev setup. I have an old Kali thumbdrive set up for pentesting that works well for plug-and-play purposes.
 - If you just want to compile and run code, there are plenty of free websites that let you do that online now. `Repl.it` and `ideone` are a few. 
@@ -29,11 +30,13 @@ You should be safe and backup Windows and Ubuntu first. I have a lot of experien
 
 ### Create Unallocated Space in Windows
 First, make sure you have unallocated space available. You'll want to do this in Windows (with dual boots, Windows is always the "primary" because it is very greedy and doesn't like to share) so boot into that.
+
 - Use Disk Management to free up space by shrinking a volume. I put about 30GB out of the ~250 I had on my main Windows partition, into unallocated space. (Anyone reading this is presumably already familiar with how to do this from when you initially set up the dual boot, using a process such as https://itsfoss.com/install-ubuntu-1404-dual-boot-mode-windows-8-81-uefi/).
 
 ### Grow Your Linux Partition in Ubuntu
 To grow your Linux partition, you now need to reboot into Ubuntu. 
  But not the normal mount - instead, boot up from the live USB/disc you used to install Ubuntu. You can't do the next step on your normal Ubuntu partition even if you install GParted onto it; GParted won't allow you, because it could wreak havoc if you repartitioned from within the mounted volume.
+
 - From within the "trial Ubuntu", use GParted to add the additional space, that you unallocated in Windows, to your Ubuntu partition. Identify the partition, right click, hit Resize/Move, and drag the slider to take up the unallocated space. Then just hit the green checkmark to apply the operation.
 - My resizing operation initially failed with "no such file or directory" from fdisk; a quick search brought up this answer (https://unix.stackexchange.com/a/434420). I ran `partprobe` in a terminal, retried the resize operation, and it worked.
 
