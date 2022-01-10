@@ -17,6 +17,7 @@ I've been dual-booting Windows and Linux for nearly a decade now. I couldn't aff
 These days, there are more options than ever for cross-platform development:
 
 - Microsoft introduced [WSL](https://docs.microsoft.com/en-us/windows/wsl/about), a subsystem for Linux a couple years ago. It looks pretty freaking cool, although I haven't used it much beyond some cursory Bash scripts.
+    - Edit: As of January 2022, I've started using WSL 2 on Windows combined with the [Visual Studio Code Remote - WSL](https://code.visualstudio.com/docs/remote/wsl) VSCode extension for my coding side projects, and haven't found a need yet to do a dual-boot installation on my new laptop. YMMV.
 - Thumbdrive mounts. These are easy to lose, so not a great option for a permanent dev setup. I have an old Kali thumbdrive set up for pentesting that works well for plug-and-play purposes.
 - If you just want to compile and run code, there are plenty of free websites that let you do that online now. `Repl.it` and `ideone` are a few. 
 
